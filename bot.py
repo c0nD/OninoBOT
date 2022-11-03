@@ -25,13 +25,13 @@ def run_bot():
     intents.presences = False
     client = discord.Client(intents=intents)
   
-    welcome_test_id = 1036888997114429450
-    rules_channel_id = 1037605079076831253
+    welcome_test_id = 939241047379308554
+    rules_channel_id = 939240668369387590
 
     # Connected to Discord API woooo
     @client.event
     async def on_ready():
-        print(f'\n\n\t\t{client.user} is now running!')
+        print(f'\n\n\t\t\t\t{client.user} is now running!')
 
     # Reply to messages
     @client.event
@@ -40,9 +40,27 @@ def run_bot():
         user_message = str(message.content)
         await send_message(message, user_message)
       # React to join message
-        emoji_list = ["\U0001F5A4", "<:manlet:1037374977680351233>", "\U0001F63C", "\U0001F497",
-                     "\U0001F919", "\U0001F9C5", "\U0001F920", "\U0001F49E"]
-        react_list = random.sample(emoji_list, 4)
+        emoji_list = ["\U0001F49B", "\U0001F497", "\U0001F49C", "\U0001F9E1", "\U0001F499", "\U0001F49A",
+                     "\U0001F49D", "\U0001F496", "\U0001F31F", "\U0001F9C5", "\U0001F9C4",
+                     "<:brucelove:997414533356331068>", "<:brucecute:994569978080657468>",
+                     "<:bruceowo:997117891071725719>", "<:bruceevilera:997117911040807013>",
+                     "<:bite_onion:1003670600067334145>", "<:bite_tl:1003671564644007936>",
+                     "<:uwu:942591940430540871>", "<:blush:940232012336349194>",
+                     "<:hamsterluv:939494342798766150>", "<:omg_cat:943033137829662721>",
+                     "<:elmorise:939452816810979370>", "<:feetcacao_revanna:969985639858733116>",
+                     "<:feetdevil:957833444648439869>", "<:feetfig:942463290766934026>",
+                     "<:feetgnome:957832987272159263>", "<:feetherb:957833315891707954>",
+                     "<:feetpome:957833343192404058>", "<:feetsonic:957833282635046923>",
+                     "<:feetsorbet:957833413979684874>", "<:feetsquid:942598509302022154>",
+                     "<:feetwalla:957983015936622622>", "<:feetwhroom:957833378101604422>"
+                     "<:gnome:963213787681406979>", "<:kermit_cowboy:1019075257480511538>",
+                     "<:kermit_gasp:1019075299817816094>", "<:kermit_hand:1019075234617376768>",
+                     "<:kermit_luv:1019075279240568913>", "<:kermit_shy:1019075213427740712>",
+                     "<:pepelove:942461588068253706>", "<:pepecookie:957852663821766746>",
+                     "<:qt_bananya:1019077326983663707>", "<:qt_duck:1015560434553733140>",
+                     "<:qt_flowercat:1015562180650860565>", "<:qt_oo:1015562456728358912>",
+                     "<:qt_peek:1015561776554835988>", "<:qt_yougotgames:1015562517013090385>"]
+        react_list = random.sample(emoji_list, random.randint(7,9))
       
         if message.author == client.user:
           if message.channel.id == welcome_test_id:
