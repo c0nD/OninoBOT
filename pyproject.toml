@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "repl_python3_Onino-BOT"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+version = "0.0.1 Pre-Deploy"
+description = "A cute little Onion for your Discord server"
+authors = ["c0nD"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

@@ -6,4 +6,5 @@ def get_response(message: str) -> str:
   for m in onion:
     if p_message == m:
       return "**CULT!**"
-  return
+    else:
+      return "nil"
