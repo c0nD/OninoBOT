@@ -2,6 +2,8 @@ import discord
 import os
 import responses
 import random
+import asyncio
+from webserver import keep_alive
 
 
 # Replies to the onion (setup method)
@@ -75,5 +77,6 @@ def run_bot():
         welcome_channel = client.get_channel(welcome_test_id)
       
         await welcome_channel.send(f"Welcome {member.mention} to the **{member.guild.name}!** Please check out out <#{rules_channel_id}> to pick up some roles and familiarize yourself with us!")
-  
+
+    keep_alive()
     client.run(tkn)

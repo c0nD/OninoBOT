@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "repl_python3_Onino-BOT"
-version = "0.0.2 Pre-Deploy"
+version = "1.0.0 [Deployed]"
 description = "A cute little Onion for your Discord server"
 authors = ["c0nD"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 discord = "^2.0.0"
+Flask = "^2.2.2"
 
 [tool.poetry.dev-dependencies]
 
