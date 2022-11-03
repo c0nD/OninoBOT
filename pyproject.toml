@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "repl_python3_Onino-BOT"
-version = "0.0.1 Pre-Deploy"
+version = "0.0.2 Pre-Deploy"
 description = "A cute little Onion for your Discord server"
 authors = ["c0nD"]
 
