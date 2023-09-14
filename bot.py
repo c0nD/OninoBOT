@@ -21,8 +21,7 @@ async def send_message(message, user_message):
 # Runs the bot and sends messages
 def run_bot():
     # Boring annoying shit
-    if os.getcwd() == 'C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0':
-        os.chdir(os.path.dirname(os.path.abspath(__file__))) # bug in python, think it was fixed but this just makes sure
+    os.chdir(os.path.dirname(os.path.abspath(file))) # bug in python, think it was fixed but this just makes sure
 
     load_dotenv(dotenv_path=str(Path(os.path.realpath(__file__)).parent.parent)+"\\Token.env") # i use this personally as i find it the easiest to use, you might want to change it 
     intents = discord.Intents.default()
